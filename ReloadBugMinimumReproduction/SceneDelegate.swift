@@ -20,9 +20,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let appWindow = UIWindow(frame: windowScene.coordinateSpace.bounds)
         appWindow.windowScene = windowScene
         
+        let viewModel = ViewModel()
+        
+        let viewController = ViewController.init(nibName: String(describing: ViewController.self), bundle: .main)
+        viewController.viewModel = viewModel
+        viewModel.viewController = viewController
+        viewModel.viewControllerCreated()
         let navigationController = UINavigationController()
-        navigationController.pushViewController(ViewModel().instantiate(), animated: true)
+        navigationController.pushViewController(viewModel.viewController!, animated: true)
 
+        
         appWindow.rootViewController = navigationController
         appWindow.makeKeyAndVisible()
         

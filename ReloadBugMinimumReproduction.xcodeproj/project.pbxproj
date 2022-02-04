@@ -22,7 +22,6 @@
 		0735F63C27AD9FD500667840 /* TimecardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0735F62B27AD9FD500667840 /* TimecardTableViewCell.xib */; };
 		0735F63D27AD9FD500667840 /* TimecardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0735F62C27AD9FD500667840 /* TimecardTableViewCell.swift */; };
 		0735F64C27ADA16100667840 /* Nibable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0735F64A27ADA16100667840 /* Nibable.swift */; };
-		0735F65727ADA5C700667840 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0735F65627ADA5C700667840 /* DummyData.swift */; };
 		0735F65927ADAA0600667840 /* ContentSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0735F65827ADAA0600667840 /* ContentSizedTableView.swift */; };
 		0735F65B27ADC54300667840 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0735F65A27ADC54300667840 /* Models.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +44,6 @@
 		0735F62B27AD9FD500667840 /* TimecardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimecardTableViewCell.xib; sourceTree = "<group>"; };
 		0735F62C27AD9FD500667840 /* TimecardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimecardTableViewCell.swift; sourceTree = "<group>"; };
 		0735F64A27ADA16100667840 /* Nibable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nibable.swift; sourceTree = "<group>"; };
-		0735F65627ADA5C700667840 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		0735F65827ADAA0600667840 /* ContentSizedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSizedTableView.swift; sourceTree = "<group>"; };
 		0735F65A27ADC54300667840 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +141,6 @@
 		0735F63E27ADA06F00667840 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				0735F65627ADA5C700667840 /* DummyData.swift */,
 				0735F64A27ADA16100667840 /* Nibable.swift */,
 				0735F65827ADAA0600667840 /* ContentSizedTableView.swift */,
 				0735F65A27ADC54300667840 /* Models.swift */,
@@ -227,7 +224,6 @@
 			files = (
 				0735F60927AD8C3500667840 /* ReloadBugMinimumReproduction.xcdatamodeld in Sources */,
 				0735F63127AD9FD500667840 /* ViewModel.swift in Sources */,
-				0735F65727ADA5C700667840 /* DummyData.swift in Sources */,
 				0735F65B27ADC54300667840 /* Models.swift in Sources */,
 				0735F65927ADAA0600667840 /* ContentSizedTableView.swift in Sources */,
 				0735F5FF27AD8C3500667840 /* AppDelegate.swift in Sources */,

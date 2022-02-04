@@ -6,9 +6,9 @@ class TimecardEmployeeTableViewCell: UITableViewCell, Nibable {
     
     @IBOutlet weak var employeeLabel: UILabel!
     @IBOutlet weak var hoursTextField: UITextField!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         hoursTextField.delegate = self
     }
 }

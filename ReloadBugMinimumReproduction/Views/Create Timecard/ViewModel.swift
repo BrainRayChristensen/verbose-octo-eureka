@@ -5,20 +5,14 @@ class ViewModel {
     
     weak var viewController: ViewController?
     
-    func instantiate() -> ViewController {
-        let vc = ViewController.instantiateView(viewModel: self)
-        viewController = vc
-        viewControllerCreated()
-        return vc
-    }
-    
     //MARK: data
     var timecard = Timecard(
         date: Date(),
-        rows: [Row(user: DummyData.users[0], hours: [0])],
-        columns: [Column(costCode: DummyData.costCodes[0])]
+        rows: [Row(hours: [0])],
+        columns: [Column(costCode:
+            CostCode(costCode: "cost-1234", jobCode: "job-1234", costCodeTitle: "my cost code", jobTitle: "my job")
+        )]
     )
-    
     
     //MARK: Setup / Controller Callbacks
     func viewControllerCreated() {

@@ -20,30 +20,12 @@ class Timecard {
 }
 
 class Row {
-    init(user: User, hours: [Double]) {
-        self.user = user
+    init(hours: [Double]) {
         self.hours = hours
     }
     
-    var user:User
     //note, timecard.rows[i].hours[x] is tied to timecard.column[x]
     var hours:[Double]
-}
-
-public class User {
-    init(serverId: String? = nil, firstName: String? = nil, lastName: String? = nil, employeeId: String? = nil, tradeId: String? = nil) {
-        self.serverId = serverId
-        self.firstName = firstName
-        self.lastName = lastName
-        self.employeeId = employeeId
-        self.tradeId = tradeId
-    }
-    
-    var serverId: String?
-    var firstName: String?
-    var lastName: String?
-    var employeeId: String?
-    var tradeId: String?
 }
 
 class Column {

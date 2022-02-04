@@ -7,10 +7,8 @@ class TimecardTableViewCell: UITableViewCell, Nibable {
     private var timecard:Timecard?
     private var columnIndex: Int?
     
-
-    //MARK: IB Outlets
     @IBOutlet weak var totalHoursLabel: UILabel!
-    @IBOutlet weak var employeeTableView: UITableView!
+    @IBOutlet weak var employeeTableView: ContentSizedTableView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

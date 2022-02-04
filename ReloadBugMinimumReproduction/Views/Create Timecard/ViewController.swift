@@ -3,33 +3,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //MARK: Ignore Below This
-    //it's code for instantiating the view and doesn't apply to the problem
-    static var xibBundle: Bundle { .main }
-    static var xibName: String { String(describing: self) }
-
-    private var viewModel: ViewModel?
-
-    static func instantiateView(viewModel:ViewModel) -> Self {
-        guard xibBundle.path(forResource: xibName, ofType: "nib") != nil else {
-            fatalError("Unable to instantiate View Controller With Xib name \(xibName)")
-        }
-        
-        let viewController = Self.init(nibName: xibName, bundle: xibBundle)
-        viewController.viewModel = viewModel
-        return viewController
-    }
-    
-    override required init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
-    //MARK: Ignore Above This
-    
-
+    var viewModel: ViewModel?
     
     var timecard: Timecard? {didSet {
         if self.isViewLoaded {
@@ -41,8 +15,8 @@ class ViewController: UIViewController {
     var setHours: ((_ hours:Double, _ rowIndex: Int, _ columnIndex:Int) -> Void)?
     
     //MARK: - IBOutlets
-    @IBOutlet weak var employeeTableView: UITableView!
-    @IBOutlet weak var timecardTableView: UITableView!
+    @IBOutlet weak var employeeTableView: ContentSizedTableView!
+    @IBOutlet weak var timecardTableView: ContentSizedTableView!
     
     //MARK: - Lifecycle methods
     override func viewDidLoad() {
