@@ -93,21 +93,13 @@
 		0735F61527AD9ECE00667840 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0735F61627AD9FD500667840 /* Create Timecard */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		0735F61627AD9FD500667840 /* Create Timecard */ = {
-			isa = PBXGroup;
-			children = (
 				0735F61C27AD9FD500667840 /* ViewModel.swift */,
 				0735F61A27AD9FD500667840 /* ViewController.swift */,
 				0735F61B27AD9FD500667840 /* ViewController.xib */,
 				0735F62427AD9FD500667840 /* Employee Cell */,
 				0735F62727AD9FD500667840 /* Timecard Cell */,
 			);
-			path = "Create Timecard";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0735F62427AD9FD500667840 /* Employee Cell */ = {
