@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0735F5FF27AD8C3500667840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0735F5FE27AD8C3500667840 /* AppDelegate.swift */; };
 		0735F60127AD8C3500667840 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0735F60027AD8C3500667840 /* SceneDelegate.swift */; };
-		0735F60927AD8C3500667840 /* ReloadBugMinimumReproduction.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0735F60727AD8C3500667840 /* ReloadBugMinimumReproduction.xcdatamodeld */; };
 		0735F60B27AD8C4700667840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0735F60A27AD8C4700667840 /* Assets.xcassets */; };
 		0735F60E27AD8C4700667840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0735F60C27AD8C4700667840 /* LaunchScreen.storyboard */; };
 		0735F62F27AD9FD500667840 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0735F61A27AD9FD500667840 /* ViewController.swift */; };
@@ -30,7 +29,6 @@
 		0735F5FB27AD8C3500667840 /* ReloadBugMinimumReproduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReloadBugMinimumReproduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0735F5FE27AD8C3500667840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0735F60027AD8C3500667840 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0735F60827AD8C3500667840 /* ReloadBugMinimumReproduction.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReloadBugMinimumReproduction.xcdatamodel; sourceTree = "<group>"; };
 		0735F60A27AD8C4700667840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0735F60D27AD8C4700667840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0735F60F27AD8C4700667840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,14 +76,13 @@
 		0735F5FD27AD8C3500667840 /* ReloadBugMinimumReproduction */ = {
 			isa = PBXGroup;
 			children = (
-				0735F63E27ADA06F00667840 /* Helper */,
-				0735F61527AD9ECE00667840 /* Views */,
 				0735F5FE27AD8C3500667840 /* AppDelegate.swift */,
 				0735F60027AD8C3500667840 /* SceneDelegate.swift */,
 				0735F60A27AD8C4700667840 /* Assets.xcassets */,
 				0735F60C27AD8C4700667840 /* LaunchScreen.storyboard */,
 				0735F60F27AD8C4700667840 /* Info.plist */,
-				0735F60727AD8C3500667840 /* ReloadBugMinimumReproduction.xcdatamodeld */,
+				0735F63E27ADA06F00667840 /* Helper */,
+				0735F61527AD9ECE00667840 /* Views */,
 			);
 			path = ReloadBugMinimumReproduction;
 			sourceTree = "<group>";
@@ -214,7 +211,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0735F60927AD8C3500667840 /* ReloadBugMinimumReproduction.xcdatamodeld in Sources */,
 				0735F63127AD9FD500667840 /* ViewModel.swift in Sources */,
 				0735F65B27ADC54300667840 /* Models.swift in Sources */,
 				0735F65927ADAA0600667840 /* ContentSizedTableView.swift in Sources */,
@@ -434,19 +430,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		0735F60727AD8C3500667840 /* ReloadBugMinimumReproduction.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0735F60827AD8C3500667840 /* ReloadBugMinimumReproduction.xcdatamodel */,
-			);
-			currentVersion = 0735F60827AD8C3500667840 /* ReloadBugMinimumReproduction.xcdatamodel */;
-			path = ReloadBugMinimumReproduction.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 0735F5F327AD8C3500667840 /* Project object */;
 }
